@@ -54,6 +54,32 @@ flex-basis: auto;
 
 flex: 1 意为 flex: 1 1 auto
 
+## Summary For All
+
+basically using some flex-related properties to structure the whole website.
+
+[1] to formate those section-like website, need to use `section` tag in html file and set the corresponding containter to be `100vh` which means the viewport height, so that each section can be strecthed to adapt to your screen height. (which is pretty elegant)
+
+we usually use 
+
+```
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+```
+these properties as container's property.
+> Note that we have main-axis and sub-axis, which will help you position the items by `align-items: center;
+  justify-content: center;`
+  
+
+[2] structure inside each section. we may use another flexbox container inside one parent container to hold up more items like navigation or some scrum-map. And in this way, the `flex-direction` may usually be the opposite to the parent container. For the child container, we may wonder to stretch the block to whatever proportion to the whole layout. we want to use
+```
+  flex-grow: 1;
+  flex-basis: 0;
+  align-self: stretch;
+```
+which also applies the same logic from main-axis and sub-axis when setting their values.
+> Note that the `flex-basis` is pretty useful when you try to eliminate the effect of inner text to the block when stretching since `align-self: stretch` ONLY stretch the empty space to full length!
 
 
 
