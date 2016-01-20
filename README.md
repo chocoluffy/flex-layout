@@ -1,5 +1,7 @@
 check [this post](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) about Flexbox layout
 
+> Below is the code that can be applied to many text\presentation related website. [1] font is cool and elegant. [2] layout is fast since we set div to `display: flex`. We won't be bother to type that anymore, focusing on "position" and "stretch"
+
 ```
 body {
   background-color: #1F1E34;
@@ -37,7 +39,18 @@ a:hover {
 ```
 especially the font, it is so beautiful!
 
-These units are vh (viewport height), vw (viewport width), vmin (viewport minimum length) and vmax (viewport maximum length).
+These units are vh (viewport height), vw (viewport width), vmin (viewport minimum length) and vmax (viewport maximum length). we set the vh to 100 like this:
+```
+.container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+```
+for the parent div container, since we want that parent div can take up a viewport height. vh stands for "viewport height"
+
+> Note that `flex-direction` indicate items' aligning, rows or columns. Then `align-items` means main-axis and `justify-content` is for sub-axis.
 
 ## flex
 

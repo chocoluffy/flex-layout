@@ -13,9 +13,10 @@
     </head>
     <body>
         <section>
-            <div class="container">
+            <div class="container" id="intro-section">
+                <div class="overlay"></div>
                 <h1>I Love React</h1>
-                <p>I just want to see the so-called live-coding</p>    
+                <p>I just want to see the so-called live-coding</p>
             </div>
         </section>
         <section>
@@ -45,6 +46,9 @@
             <div class="containerrow">
                 <div class="iphone-demo">
                   <img src="image/iphone-frame.svg"/>
+                  <div class="contentimage">
+                    <img src="./image/tumblr-demo.jpg" alt="">
+                  </div>
                 </div>
 
                 <div class="feature-description">
@@ -61,6 +65,9 @@
             <div class="containerrow">
                 <div class="iphone-demo">
                   <img src="image/iphone-frame.svg"/>
+                  <div class="contentimage">
+                      <img src="./image/swype-demo.jpg"/>
+                  </div>
                 </div>
 
                 <div class="feature-description">
@@ -76,9 +83,28 @@
         <section>
             <div class="container">
                 <h1>Android Is Here</h1>
+                <div class="anchor">
+                    <img id="android-robot" src="./image/android-robot.svg"/>
+                </div>
             </div>
         </section>
+        <div id="slider-control">
+          <a href="#native" class="active">
+            <div class="dot"></div>
+          </a>
 
+          <a href="#touch">
+            <div class="dot"></div>
+          </a>
+
+          <a href="#async">
+            <div class="dot"></div>
+          </a>
+
+          <a href="#flex">
+            <div class="dot"></div>
+          </a>
+        </div>
     </body>
 </html> 
 
