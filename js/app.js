@@ -69,6 +69,7 @@ function addSmoothScrolling(){
 			link.addEventListener("click", function(e){
 				// console.log(sec.offsetTop+"px");
 				scrollToElement(sec);
+				e.preventDefault();
 			})
 		})(section)
 	}
