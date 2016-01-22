@@ -488,7 +488,7 @@ a:hover {
   text-decoration: none;
 }
 
-section {
+.section {
   background-color: rgba(0,0,0,0.3);
   overflow: hidden;
   /*border: 0px solid #FFF;*/
@@ -604,8 +604,8 @@ div.anchor{
   position: absolute;
   right: 0%;
   bottom: 0%;
-  -webkit-transform:translate(47%, 47%);
-          transform:translate(47%, 47%);
+  -webkit-transform:translate(47%, 50%);
+          transform:translate(47%, 50%);
 }
 
 div.anchor img{

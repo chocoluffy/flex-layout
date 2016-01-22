@@ -10,18 +10,21 @@
         <link rel="favicon" href="favicon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="./bundle/app.css">
+        <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+        <script type="text/javascript" src="node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+        <script src="js/app.js"></script>
     </head>
     <body>
-        <section>
+        <div class="section" id="react">
             <div class="container" id="intro-section">
                 <div class="overlay"></div>
                 <h1>I Love React</h1>
                 <p>I just want to see the so-called live-coding</p>
             </div>
-        </section>
-        <section>
+        </div>
+        <div class="section" id="intro">
             <div class="container">
-                 <img class="react-logo" src="image/react-logo.svg"/>
+                 <img id="logo" class="react-logo" src="image/react-logo.svg"/>
                 <h1>Build Native Apps With React</h1>  
                 <div class="sub">
                     <a href="#native">
@@ -41,8 +44,8 @@
                     </a>
                 </div>       
             </div>
-        </section>
-        <section>
+        </div>
+        <div class="section" id="native">
             <div class="containerrow">
                 <div class="iphone-demo">
                   <img src="image/iphone-frame.svg"/>
@@ -60,8 +63,8 @@
                       </p>
                 </div>
             </div>
-        </section>
-        <section>
+        </div>
+        <div class="section" id="touch">
             <div class="containerrow">
                 <div class="iphone-demo">
                   <img src="image/iphone-frame.svg"/>
@@ -79,17 +82,24 @@
                   </p>
                 </div>
             </div>
-        </section>
-        <section>
+        </div>
+        <div class="section" id="android">
             <div class="container">
                 <h1>Android Is Here</h1>
                 <div class="anchor">
                     <img id="android-robot" src="./image/android-robot.svg"/>
                 </div>
             </div>
-        </section>
+        </div>
         <div id="slider-control">
-          <a href="#native" class="active">
+          <a href="#react" class="active">
+            <div class="dot"></div>
+          </a>
+          <a href="#intro">
+            <div class="dot"></div>
+          </a>
+
+          <a href="#native">
             <div class="dot"></div>
           </a>
 
@@ -97,11 +107,7 @@
             <div class="dot"></div>
           </a>
 
-          <a href="#async">
-            <div class="dot"></div>
-          </a>
-
-          <a href="#flex">
+          <a href="#android">
             <div class="dot"></div>
           </a>
         </div>
