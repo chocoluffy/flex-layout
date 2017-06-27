@@ -55,17 +55,23 @@ a:hover {
 
 }
 
+
+
+/* small desktop */
+@media all and (max-width: 1200px) {
 #intro-section{
   background-image: url(../image/full2.png);
   background-size: cover;
   background-position: center;
 }
+}
 
-@media only screen and (max-device-width: 768px) {
+/* mobile phone */
+@media all and (max-width: 768px) {
   #intro-section{
-    background-image: url("http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-search.gif");
-    background-size: cover;
-    background-position: center;
+  background-image: url("http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-search.gif");
+  background-size: cover;
+  background-position: center;
   }
 }
 
